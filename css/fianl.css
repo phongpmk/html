@@ -1,0 +1,206 @@
+*body{
+  background-color: grey;
+}
+/* content */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(80, 79, 79);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  /* li a:hover {
+    background-color: #111;
+  } */
+  .active {
+    background-color: #04AA6D;
+  }
+ .dropdown {
+    background-color: none;
+    cursor: pointer;
+    /* position:static; */
+    display: inline-block;
+  }
+  li .dropdown a:hover {
+    background-color: #111;
+  }
+  
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    color: black;
+    background-color: #676262;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+ .dropdown:hover .dropdown-content {
+    display:block;
+  }
+  li .btn:hover{
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+  }
+  #img{
+    position: relative;
+}
+
+#img{
+ 
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   /* margin-top: 20px;  */
+    display: block;    
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   width: 100%;
+}
+#button{
+   position: absolute;
+   left: 33rem;
+   top: 17rem;
+   border-radius: 5px;
+}
+/* zoom */
+.zoom {
+  /* padding: 50px; */
+  /* background-color: green; */
+  transition: transform .5s; /* Animation */
+  /* width: 200px; */
+  /* height: 100px; */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* zoom */
+.c1{
+  margin-left: 30rem;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  /* content: "jdhuighru"; */
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+/* column 2 */
+.row {
+  display: flex;
+}
+.column2 {
+  float: left;
+  width: 30%;
+  margin-left: 30px;
+}
+
+/* Clear floats after the columns */
+/* .row:after { */
+  /* content: "jdhuighru"; */
+  /* display: table;
+  clear: both;
+} */
+.column2 {
+  float: right;
+}
+
+.left, .right {
+  width: 5%;
+}
+
+/* .middle {
+  width: 50%;
+} */
+p{
+  margin-left: 5px;
+}
+
+/* content */
+/* footer */
+.footer{
+  padding: 1px;
+  background-color: gray;
+}
+.v2{
+  text-align: center;
+  box-shadow: 3px 3px 10px 3px #333;
+}
+.list{
+  margin-left: 5px;
+}
+.row {
+  display: flex;
+}
+.column1 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  /* content: "jdhuighru"; */
+  display: table;
+  clear: both;
+}
+.column1 {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+.link{
+  color: black;
+  font-size: 15px;
+}
+/* footer */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column1 {
+    width: 100%;
+  }
+}
